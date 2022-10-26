@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(90deg, #231955, #547bc3 80%);
+  font-family: myFirstFont;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(/assets/Neirizi\ Font\ [learnparsi.com]);
+}
+/* ............. */
+
+/*....... header..................... */
+.firstSec {
+  background-image: linear-gradient(rgba(31, 70, 144), rgba(0, 0, 0, 0.705)),
+    url(/assets/img/4c5025fc27e21ebeebad07703ddb77e0.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*...... navbarHeader.......... */
+.header {
+  background-color: #332676;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.header .navbarHeader ul li a {
+  padding: 12px;
+  font-size: 15px;
+  color: #e8aa42;
+}
+.header .navbarHeader ul li a:hover {
+  padding-top: 6px;
+  background-color: #2a5ab4;
+  border-radius: 25px;
+  color: #ffe5b4;
+}
+/*...... navbarSecond.........*/
+
+.navbarSecond-right ul li a {
+  color: #ffe5b4;
+  padding: 12px;
+  transition: 1s;
+}
+.navbarSecond-right ul li a:hover {
+  color: #e8aa42;
+}
+.navbarSecond-left {
+  display: flex;
+  flex: row;
+}
+.navbarSecond-left img {
+  width: 30%;
+  height: 40%;
+}
+.navbarSecond-left span {
+  margin: 10px;
+}
+/* .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+/*.........main.............*/
+
+.main h5,
+h4 {
+  color: #e8aa42;
+  display: flex;
+  justify-content: center;
+}
+.main h4 {
+  color: #000;
+  padding-top: 15px;
+}
+
+/*.........features.............*/
+.features .fea {
+  background-color: #ffefd1;
+  border: 2px solid #332676;
+  border-radius: 20%;
+  box-shadow: 1px 3px #bec4cd;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+.features .fea ion-icon {
+  font-size: 80px;
+  color: #e8aa42;
+}
+.features .fea a span {
+  transition: 0.5s;
+}
+.features .fea a:hover span {
+  color: #332676;
+}
+.features .fea:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 2;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-2px, 0px) rotate(2deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(2deg);
+  }
+
+  60% {
+    transform: translate(-2px, 1px) rotate(0deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(2deg);
+  }
+
+  100% {
+    transform: translate(1px, -1px) rotate(-2deg);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .fea {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+/*..........enter..........*/
+.enter p {
+  font-size: 25px;
+  color: #000;
+  padding-right: 80px;
+}
+.btns {
+  margin-bottom: 60px;
+}
+.btns button {
+  background-color: #ffe5b4;
+  padding: 10px 5px;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #1f4690;
+  border: none;
+}
+.btns button:first-child {
+  padding: 10px 10px;
+  color: #e8aa42;
+  background-color: #1f4690;
+  text-align: center;
+}
+.btns button:first-child:hover {
+  color: #1f4690;
+  background-color: #ffe5b4;
+}
+.btns button:nth-child(2):hover {
+  color: #e8aa42;
+  background-color: #1f4690;
+}
+
+/* ...........secondSec........ */
+.secondSec {
+  background-color: #fff;
+}
+.details .detailBox ion-icon {
+  font-size: 75px;
+  color: #1f4690;
+}
+
+.detailPic img {
+  margin-top: 100px;
+  width: 100%;
+  height: 60%;
+}
+
+.detailBox p {
+  display: row;
+  justify-content: center;
+  color: #878383;
+}
+.detailBox h6 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+/* -------------------- search bar-------------  */
+.searchSec {
+  background-image: url(/assets/img/Xp0ULlB.jpg);
+  background-position: center;
+  background-color: inherit;
+}
+.searchSec p {
+  font-size: 28px;
+  color: #ffefd1;
+}
+.input-group {
+  border-radius: 25px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+/* ----------------news section------- */
+.newsTitr {
+  margin-bottom: 20px;
+}
+.newsTitr h6 {
+  /* font-size: 24px; */
+  color: #e8aa42;
+}
+.newsBtn button {
+  color: #1f4690;
+  font-size: 20px;
+  background-color: #e8aa42;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-bottom: 180px;
+}
+.newsBtn button:hover {
+  background-color: #ffe5b4;
+}
+
+/* <!-- --------------- news boxs--------------------   --> */
+
+.newsBoxWrap .newsBox p {
+  color: #878383;
+  font-size: 15px;
+}
+.newsBox {
+  border: 1px solid #e8aa42;
+  border-radius: 25px;
+  background-color: #ffefd1;
+  padding: 20px;
+}
+.newsBoxWrap .newsBox button {
+  background-color: #2a5ab4;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+.newsBoxWrap .newsBox button a {
+  color: #ffefd1;
+}
+.newsBoxWrap .newsBox button a:hover {
+  color: #231955;
+}
+/* --------------- commnet section--------- */
+.fifthSec {
+  background-color: #ffefd1;
+}
+.fifthSec .comment h5 {
+  font-weight: bold;
+}
+.fifthSec .comment p {
+  color: #878383;
+}
+/* -------------Barat Section-------------------- */
+
+.sixthSec {
+  background-color: #ffffff;
+}
+.barat {
+  padding: 120px 20px;
+}
+.barat .baratBtn {
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #547bc3;
+  color: #ffe5b4;
+}
+.barat .baratBtn:hover {
+  background-color: #231955;
+}
+.barat h3 {
+  color: #332676;
+}
+.barat p {
+  color: #878383;
+}
+.baratImage {
+  padding: 120px 20px;
+}
+.baratImage img {
+  width: 55%;
+  height: 65%;
+}
+/* <!-- ------------------ request barat-------------------- --> */
+.requestBarat h3 {
+  color: #ffe5b4;
+}
+
+.requestBarat ul li,
+.requestBarat p {
+  color: #ffefd1;
+  margin-top: 15px;
+}
+.requestBaratImg {
+  padding: 120px 50px;
+}
+.requestBaratImg img {
+  width: 50%;
+  height: 60%;
+}
+.requestBarat {
+  padding: 120px 50px;
+}
+.requestBarat .requestBaratBtn {
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 10px 15px;
+  background-color: #e8aa42;
+  color: #ffe5b4;
+}
+.requestBarat .requestBaratBtn:hover {
+  background-color: #547bc3;
+}
+/* ----------- footer -------- */
+.footerSec {
+  background-color: #ffefd1;
+}
+.footerImg img {
+  width: 70px;
+  height: 60px;
+}
+.footerNumber ul li,
+.footerList ul li {
+  margin-top: 10px;
+  color: #332676;
+}
+.footerList ul li a {
+  color: #332676;
+}
+.footerList ul li a:hover {
+  color: #547bc3;
+}
