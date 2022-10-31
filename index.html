@@ -10,51 +10,61 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Darik</title>
   </head>
   <body>
     <section class="firstSec">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="header">
-            <!-- /*...... navbarHeader.......... */ -->
-            <div class="navbarHeader col-12 col-md-12 col-lg-7">
-              <ul class="d-flex justify-content-center mt-2">
-                <li><a href="#">ورود اعضاء</a></li>
-                <li><a href="#">عضو شوید</a></li>
-                <li><a href="#">توکن امضای دیجیتال</a></li>
-                <li><a href="#"> راهنمای سامانه</a></li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="row header">
+          <!-- /*...... navbarHeader.......... */ -->
+          <div class="navbarHeader col-12">
+            <ul class="d-flex justify-content-start mt-3">
+              <li class="test"><a href="#">ورود اعضاء</a></li>
+              <li><a href="#">عضو شوید</a></li>
+              <li><a href="#">توکن امضای دیجیتال</a></li>
+              <li><a href="#"> راهنمای سامانه</a></li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <!-- /*...... navbarSecond.........*/ -->
-      <div class="container-fluid">
+    </section>
+    <!-- /*...... navbarSecond.........*/ -->
+    <section>
+      <div class="container">
         <div class="row">
-          <div class="navbarSecond-right col-12 col-sm-11 col-md-10">
-            <ul class="d-flex mt-2">
+          <div
+            class="navbarSecond-right col-12 col-sm-11 col-md-10 col-lg-9 mt-2"
+          >
+            <ul class="d-flex mt-3">
               <li><a href="#">ویترین کسب و کارها</a></li>
               <li><a href="#"> سبد خرید</a></li>
               <li><a href="#">فهرست کسب و کارها</a></li>
               <li><a href="#"> رویدادها</a></li>
             </ul>
           </div>
-          <div class="navbarSecond-left d-none d-md-block col-md-2">
-            <img src="./assets/img/images.png" class="mt-2" alt="لوگو" />
-            <span>name</span>
+          <div class="navbarSecond-left d-none d-md-block col-md-2 col-lg-3">
+            <div class="row justify-content-end">
+              <img
+                src="./assets/img/images.png"
+                class="mt-2 col-md-6"
+                alt="لوگو"
+              />
+              <span class="col-md-4 col-lg-3">name</span>
+            </div>
           </div>
-
-          <!-- /*.........main.............*/ -->
-          <div class="main col-12 mt-4">
-            <h5 class="mt-3">سامانه واسطه کسب و کارها</h5>
-            <h4 class="mb-5">خدمات ما:</h4>
+        </div>
+        <!-- /*.........main.............*/ -->
+        <div class="container">
+          <div class="row">
+            <div class="main col-12 mt-5">
+              <h5 class="mt-3">سامانه واسطه کسب و کارها</h5>
+              <h4 class="mb-5">خدمات ما:</h4>
+            </div>
           </div>
         </div>
       </div>
       <!-- /*.........features............*/ -->
-      <div class="container-fluid">
+      <div class="container">
         <div class="features row">
           <div class="firstFea fea mb-3 col-10 col-sm-7 col-md-3 col-xl-2">
             <a href="#" class="d-flex flex-column align-items-center">
@@ -88,19 +98,20 @@
           </div>
         </div>
       </div>
+
       <!-- /*..........enter..........*/ -->
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="enter col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3">
-            <p class="mt-5">وارد سامانه شوید</p>
-          </div>
-          <div class="row justify-content-center btns">
-            <button class="col-4 col-sm-3 col-lg-2 offset-1">ورود</button>
-            <button class="col-4 col-sm-3 col-lg-2">ثبت نام</button>
-          </div>
+
+      <div class="container">
+        <div class="enter">
+          <p class="mt-5">به سامانه وارد شوید</p>
+        </div>
+        <div class="row justify-content-center btns">
+          <button class="col-4 col-sm-3 col-lg-2 offset-1">ورود</button>
+          <button class="col-4 col-sm-3 col-lg-2">ثبت نام</button>
         </div>
       </div>
     </section>
+
     <section class="secondSec">
       <div class="container-fluid">
         <div class="about row justify-content-center">
@@ -143,7 +154,12 @@
           </div>
           <!-- ------------------ pic------------------ -->
           <div class="detailPic col-11 col-md-12 col-lg-4">
-            <img src="./assets/img/silhouettes-gb95d322a5_1920.jpg" alt="pic" />
+            <div class="row justify-content-center mb-5">
+              <img
+                src="./assets/img/silhouettes-gb95d322a5_1920.jpg"
+                alt="pic"
+              />
+            </div>
           </div>
           <!-- --------------------- detail leftBox-------------- -->
           <div class="detailWrap col-11 col-md-12 col-lg-4">
@@ -215,10 +231,10 @@
         </div>
       </div>
       <!-- --------------- news boxs--------------------   -->
-      <div class="container-fluid">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="newsBoxWrap mb-5 col-10">
-            <div class="row justify-content-evenly">
+          <div class="newsBoxWrap mb-5 col-12 col-xxl-11">
+            <div class="row justify-content-between">
               <div class="newsBox mb-4 col-lg-3">
                 <h6>کاهش قیمت تمام شده لوازم خانگی با تامین مالی زنجیره‌ای</h6>
                 <p>
