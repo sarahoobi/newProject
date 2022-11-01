@@ -46,8 +46,11 @@ li {
 
 .header .navbarHeader ul li a {
   padding: 12px 20px;
-  font-size: 15px;
+  font-size: 14px;
   color: #faf7f0;
+}
+.header .navbarHeader ul li a:first-child {
+  padding-right: 10px;
 }
 .header .navbarHeader ul li a:hover {
   background-color: #f7ecde;
@@ -60,6 +63,7 @@ li {
   color: #333333;
   padding: 10px;
   transition: 1s;
+  font-size: 13px;
 }
 .navbarSecond-right ul li a:hover {
   color: #9ed2c6;
@@ -80,6 +84,7 @@ li {
 
 .main h5,
 h4 {
+  font-size: 110%;
   color: #333333;
   display: flex;
   justify-content: center;
@@ -104,6 +109,7 @@ h4 {
   color: #9ed2c6;
 }
 .features .fea a span {
+  font-size: 14px;
   transition: 0.5s;
 }
 .features .fea a:hover span {
@@ -151,7 +157,7 @@ h4 {
 
 /*..........enter..........*/
 .enter p {
-  font-size: 22px;
+  font-size: 16px;
   text-align: center;
 }
 .btns {
@@ -161,7 +167,7 @@ h4 {
   background-color: #f7ecde;
   padding: 10px 5px;
   border-radius: 25px;
-  font-size: 20px;
+  font-size: 18px;
   color: #54bab9;
   border: none;
 }
@@ -177,10 +183,15 @@ h4 {
   background-color: #e9dac1;
 }
 
-/* ...........secondSec........ */
-.secondSec {
+/* ...........secondSec detailBox........ */
+.detailSec {
   background-color: #fff;
 }
+.detailSec .aboutTitr h4 {
+  margin-top: 90px;
+  text-align: center;
+}
+
 .details .detailBox ion-icon {
   font-size: 75px;
   color: #9ed2c6;
@@ -191,44 +202,49 @@ h4 {
   width: 320px;
   height: 300px;
 }
-
+.detailBox p,
+.detailBox h6 {
+  text-align: center;
+}
 .detailBox p {
-  display: row;
-  justify-content: center;
+  font-size: 15px;
   color: #878383;
 }
 .detailBox h6 {
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 /* -------------------- search bar-------------  */
 .searchSec {
-  background-image: url(./assets/img/10709920.png);
+  background-image: url(./assets/img/360_F_198271219_7q1Y1eqrCzImyc8SCudpcC2LNW3pW9uT.jpeg);
   background-position: center;
-  background-color: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.searchSec p {
-  font-size: 28px;
-  color: #ffefd1;
+.searchSec .searchBarTitr p {
+  text-align: center;
+  font-size: 24px;
+  color: #f7ecde;
+  margin-top: 100px;
 }
 .input-group {
   border-radius: 25px;
-  width: 88%;
-  margin-bottom: 40px;
+  width: 95%;
+  margin-bottom: 100px;
 }
 /* ----------------news section------- */
 .newsTitr {
   margin-bottom: 20px;
+  text-align: center;
 }
 .newsTitr h6 {
-  /* font-size: 24px; */
+  font-size: 22px;
   color: #2a8c8a;
+  margin-top: 100px;
 }
+
 .newsBtn button {
   color: #54bab9;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #f7ecde;
   border: 1px solid transparent;
   border-radius: 25px;
@@ -241,43 +257,48 @@ h4 {
 
 /* <!-- --------------- news boxs--------------------   --> */
 
-.newsBoxWrap .newsBox p {
-  color: #878383;
-  font-size: 15px;
-}
 .newsBox {
   border: 1px solid #e9dac1;
   border-radius: 25px;
   background-color: #f7ecde;
   padding: 20px 30px;
 }
-.newsBoxWrap .newsBox button {
+.newsBox p {
+  color: #878383;
+  font-size: 15px;
+}
+.newsBox button {
   background-color: #54bab9;
   padding: 5px 15px;
   border: 1px solid transparent;
   border-radius: 25px;
 }
-.newsBoxWrap .newsBox button a {
+.newsBox button a {
+  font-size: 12px;
   color: #ffefd1;
 }
-.newsBoxWrap .newsBox button a:hover {
+.newsBox button a:hover {
   color: #333333;
-}
-.newsBoxWrap .newsBox:first-child {
-  margin-right: 15px;
-}
-.newsBoxWrap .newsBox:nth-child(3) {
-  margin-left: 15px;
 }
 /* --------------- commnet section--------- */
 .fifthSec {
   background-color: #f7ecde;
 }
+.fifthSec .comment {
+  padding: 80px 0px 120px 0px;
+}
 .fifthSec .comment h5 {
   font-weight: bold;
+  text-align: center;
 }
 .fifthSec .comment p {
   color: #878383;
+  margin: 30px 0px;
+  text-align: center;
+}
+.fifthSec .comment span {
+  text-align: right;
+  /* margin-right: 150px; */
 }
 /* -------------Barat Section-------------------- */
 
@@ -297,6 +318,10 @@ h4 {
 .barat .baratBtn:hover {
   background-color: #9ed2c6;
 }
+.barat h3,
+.barat p {
+  text-align: center;
+}
 .barat h3 {
   color: #2a8c8a;
 }
@@ -307,25 +332,25 @@ h4 {
   padding: 120px 20px;
 }
 .baratImage img {
-  width: 55%;
-  height: 65%;
+  width: 300px;
+  height: 300px;
 }
 /* <!-- ------------------ request barat-------------------- --> */
 .requestBarat h3 {
-  color: #ffe5b4;
+  color: #e9dac1;
 }
 
 .requestBarat ul li,
 .requestBarat p {
-  color: #ffefd1;
+  color: #f7ecde;
   margin-top: 15px;
 }
 .requestBaratImg {
   padding: 120px 50px;
 }
 .requestBaratImg img {
-  width: 50%;
-  height: 60%;
+  width: 300px;
+  height: 350px;
 }
 .requestBarat {
   padding: 120px 50px;
@@ -334,11 +359,11 @@ h4 {
   border: 1px solid transparent;
   border-radius: 25px;
   padding: 10px 15px;
-  background-color: #e8aa42;
-  color: #ffe5b4;
+  background-color: #54bab9;
+  color: #f7ecde;
 }
 .requestBarat .requestBaratBtn:hover {
-  background-color: #547bc3;
+  background-color: #54bab9;
 }
 /* ----------- footer -------- */
 .footerSec {
@@ -352,10 +377,11 @@ h4 {
 .footerList ul li {
   margin-top: 10px;
   color: #54bab9;
+  font-size: 12px;
 }
 .footerList ul li a {
   color: #54bab9;
 }
 .footerList ul li a:hover {
-  color: #547bc3;
+  color: #9ed2c6;
 }
