@@ -58,15 +58,31 @@ li {
   color: #54bab9;
 }
 /*...... navbarSecond.........*/
-
+.navbarSecond-right ul li {
+  position: relative;
+}
 .navbarSecond-right ul li a {
   color: #333333;
   padding: 10px;
   transition: 1s;
   font-size: 13px;
 }
+
+.navbarSecond-right ul li::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #e1cba2;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbarSecond-right ul li:hover::after {
+  width: 95%;
+}
 .navbarSecond-right ul li a:hover {
-  color: #9ed2c6;
+  color: #8dd1c1;
 }
 .navbarSecond-left {
   display: flex;
@@ -254,6 +270,23 @@ h4 {
 .newsBtn button:hover {
   background-color: #e9dac1;
 }
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -20px #e1cba2;
+  }
+  40% {
+    box-shadow: 0 0 40px #e1cba2;
+  }
+  60% {
+    box-shadow: 0 0 40px #e1cba2;
+  }
+  100% {
+    box-shadow: 0 0 -20px #e1cba2;
+  }
+}
+.btnGlowing {
+  animation: glowing 5000ms infinite;
+}
 
 /* <!-- --------------- news boxs--------------------   --> */
 
@@ -281,13 +314,50 @@ h4 {
   color: #333333;
 }
 /* --------------- commnet section--------- */
-.fifthSec {
+.commentSec {
   background-color: #f7ecde;
+  padding: 50px 0px 200px 0px;
 }
-.fifthSec .comment {
-  padding: 80px 0px 120px 0px;
+.container-carousel {
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  position: relative;
 }
-.fifthSec .comment h5 {
+
+.container-carousel .slider div {
+  padding: 0px 40px 0px 10px;
+  width: 80%;
+  position: absolute;
+  top: 40px;
+  right: 100px;
+}
+.hidden {
+  display: none;
+}
+
+/* ---------comment section button------- */
+.container-carousel button {
+  padding: 10px 10px;
+  height: 40px;
+  border: none;
+  background-color: #54bab9;
+  position: absolute;
+  top: 40px;
+}
+.container-carousel .prev {
+  left: 0px;
+}
+.container-carousel button ion-icon {
+  font-size: 20px;
+}
+.container-carousel button:hover {
+  background-color: #8dd1c1;
+}
+.container-carousel button:hover ion-icon {
+  color: #878383;
+}
+
+/* .fifthSec .comment h5 {
   font-weight: bold;
   text-align: center;
 }
@@ -299,7 +369,7 @@ h4 {
 .fifthSec .comment span {
   text-align: right;
   /* margin-right: 150px; */
-}
+/* } */
 /* -------------Barat Section-------------------- */
 
 .sixthSec {
