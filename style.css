@@ -244,7 +244,7 @@ h4 {
 }
 .input-group {
   border-radius: 25px;
-  width: 95%;
+  width: 100%;
   margin-bottom: 100px;
 }
 /* ----------------news section------- */
@@ -316,7 +316,7 @@ h4 {
 /* --------------- commnet section--------- */
 .commentSec {
   background-color: #f7ecde;
-  padding: 50px 0px 200px 0px;
+  padding: 50px 0px 100px 0px;
 }
 .container-carousel {
   /* display: flex; */
@@ -325,11 +325,10 @@ h4 {
 }
 
 .container-carousel .slider div {
-  padding: 0px 40px 0px 10px;
+  padding: 40px 40px 0px 10px;
   width: 80%;
-  position: absolute;
-  top: 40px;
-  right: 100px;
+  /* top: 140px; */
+  margin: 0 auto;
 }
 .hidden {
   display: none;
@@ -343,9 +342,14 @@ h4 {
   background-color: #54bab9;
   position: absolute;
   top: 40px;
+  /* left: -20px; */
 }
 .container-carousel .prev {
-  left: 0px;
+  left: 25px;
+  /* right: 0px; */
+}
+.container-carousel .next {
+  right: 25px;
 }
 .container-carousel button ion-icon {
   font-size: 20px;

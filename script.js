@@ -11,3 +11,4 @@ const prevComment = function () {
 };
 next.addEventListener("click", nextComment);
 prev.addEventListener("click", prevComment);
+// for (let i=0; i<)
